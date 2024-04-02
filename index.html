@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Engaging Web Page</title>
+    
+</head>
+<body>
+    <h1>Welcome to Our Engaging Web Page!</h1>
+    <p>Discover something new and fun!</p>
+    
+    <div id="quote">
+        <p><em>"The only way to do great work is to love what you do." - Steve Jobs</em></p>
+    </div>
+
+    <div id="fun-fact">
+        <h2>Did You Know?</h2>
+        <p>Ants never sleep!</p>
+    </div>
+
+    <div id="interactive-section">
+        <h2>Engage Yourself!</h2>
+        <p>Click the button to reveal a surprise!</p>
+        <button onclick="showSurprise()">Click Me!</button>
+        <p id="surprise" style="display: none;">🎉 Surprise! You've found a hidden treasure! 🎉</p>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+</body>
+</html>
